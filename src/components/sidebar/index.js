@@ -49,7 +49,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 
 const Sidebar = styled('aside')`
   width: 100%;
-   background-color: rgb(245, 247, 249); 
+   background-color:#fff !mportant; 
   border-right: 1px solid #ede7f3; 
   height: 100vh;
   overflow: auto;
@@ -64,8 +64,8 @@ const Sidebar = styled('aside')`
  
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-color: #372476;
-    background: #372476;
+    background-color: #fff;
+    background: #fff;
   }
   @media (min-width: 767px) and (max-width:1023px)
   {
@@ -74,14 +74,13 @@ const Sidebar = styled('aside')`
   @media only screen and (max-width: 1023px) {
     width: 100%;
     /* position: relative; */
-    height: 100vh;
+    height: 40vh;
   }
 `;
 
 
 const Divider = styled(props => (
   <li {...props}>
-    <hr />
   </li>
 ))`
   list-style: none;

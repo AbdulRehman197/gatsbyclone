@@ -2,14 +2,14 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://eggheader.io",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "https://miro.medium.com/max/1000/1*G9aVAI3aezHLw_JsiCfB1Q.jpeg",
-		"logoLink": "https://learn.hasura.io",
+		"logoLink": "https://eggheader.io",
 		"title": "Gatsby-theme-apollo-doc",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"githubUrl": "https://eggheader.io",
 		"helpUrl": "",
 		"tweetText": "abdulrehman",
 		"links": [
@@ -29,7 +29,7 @@ const config = {
     		"/codeblock"
 		],
 		"links": [
-			{ "text": "Hasura", "link": "https://hasura.io"},
+			{ "text": "Hasura", "link": ""},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
@@ -38,7 +38,7 @@ const config = {
 		"title": "Gatsby-theme-apollo-doc ",
 		"description": "Documentation Gatsby-theme-apollo-doc",
 		"ogImage": null,
-		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
+		"docsLocation": "",
 		"favicon": "https://camo.githubusercontent.com/ac31ac54c2013850b0fb8a3a4926f4718a398fb3/68747470733a2f2f7777772e6761747362796a732e6f72672f6d6f6e6f6772616d2e737667"
 	},
 };

@@ -47,7 +47,7 @@ body {
 .githubSection {
   display: flex;
   align-items: center;
-  color: #000;
+  color: #131217;
   opacity: 0.7;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff !important;
+  background-color: #131217 !important;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -89,19 +89,19 @@ body {
 }
 .formElement svg path {
   float: right;
-  fill: #A9A6AB;
+  fill: #131217;
 }
 .searchInput {
   width: calc(100% - 26px);
   background-color: transparent !important;
   border-width: 0 !important;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #DAD9DA !important;
 }
 .searchInput:focus, .searchInput:visited, .searchInput:hover, .searchInput:focus-within {
   outline: none;
   border: 1px solid #D9BAE8;
   border: 0;
-  color: #000 !important;
+  color: #DAD9DA !important;
 }
 .searchWrapper
 {
@@ -116,7 +116,7 @@ body {
 }
 .hitWrapper
 {
-  background-color: #fff;
+  background-color: #131217;
   padding: 4px;
   border-radius: 4px;
   position: absolute;
@@ -137,11 +137,11 @@ body {
   display: none;
 }
 .hitWrapper span {
-  color: black;
+  color:#DAD9DA;
   font-size: 14px;
 }
 .headerTitle a {
-  color: #A9A6AB;
+  color: #DAD9DA
 }
 
 .headerTitle a:hover {
@@ -170,7 +170,7 @@ body {
 /* Header section starts here */
 .navBarDefault {
   color:#A9A6AB;
-  background-color: #fff;
+  background-color: #131217;
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
@@ -234,7 +234,7 @@ body {
 }
 pre {
   border: 0 !important;
-  background-color: rgb(245, 247, 249); /* !important; */
+  background-color: #131217; /* !important; */
 }
 
 .mainWrapper ul, .mainWrapper ol {
@@ -336,7 +336,7 @@ pre {
 }
 
 .hideFrontLine  .active >a{
-  background-color: #fff !important;
+  background-color: #131217 !important;
   color: #fff !important;
 }
 .firstLevel ul li .collapser svg path {
@@ -365,7 +365,7 @@ pre {
   padding-left: 15px;
 }
 .sideBarUL .item>a:hover {
-  background-color: #fff;
+  background-color: #131217;
   color: #473485 !important;
 }
 /* .showFrontLine .item >a:hover {
@@ -373,10 +373,10 @@ pre {
 } */
 .showFrontLine .active >a {
   color: #000;
-  background-color: #fff;
+  background-color: #131217;
 }
 #navbar {
-  background: #fff !important;
+  background: #131217 !important;
 
 }
 .sideBarUL  .item .item{
@@ -387,7 +387,7 @@ pre {
   margin-left: 0 !important;
 }
 .visible-xs  {
-  background: #fff !important;
+  background: #131217 !important;
 }
 .showFrontLine  .item .item{
   border-left: 1px solid #e6ecf1;
@@ -400,7 +400,7 @@ pre {
   border-color: #000 !important;
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
-  background-color: #fff !important;
+  background-color: #131217 !important;
   color: #000;
 }
 
@@ -464,7 +464,7 @@ pre {
   align-items: center;
   place-self: stretch;
   color: rgb(36, 42, 49);
-  background-color: rgb(255, 255, 255);
+  background-color: #131217;
   border-radius: 3px;
   border: 1px solid rgb(230, 236, 241);
   transition: border 200ms ease 0s;
@@ -530,7 +530,7 @@ pre {
   align-items: center;
   place-self: stretch;
   color: rgb(36, 42, 49);
-  background-color: rgb(255, 255, 255);
+  background-color: #131217;
   border-radius: 3px;
   border: 1px solid rgb(230, 236, 241);
   transition: border 200ms ease 0s;
@@ -572,12 +572,12 @@ padding: 0; }
 
 table tr {
   border-top: 1px solid #cccccc;
-  background-color: white;
+  background-color: #131217;
   margin: 0;
 padding: 0; }
 
 table tr:nth-child(2n) {
-  background-color: #f8f8f8; }
+  background-color: #131217; }
 
 table tr th {
   font-weight: bold;
@@ -662,14 +662,14 @@ img {
   }
   .navBarParent {
     display: block;
-    background: #fff !important;
+    background: #131217 !important;
 
 
 
   }
   .navBarParent .css-folsf1 {
     display: block;
-    background: #fff !important;
+    background: #131217 !important;
     
   }
   .separator {
