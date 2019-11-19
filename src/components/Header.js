@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { StaticQuery, graphql } from "gatsby";
 import GitHubButton from "react-github-btn";
-import Link from "./link"
+import Link from "./link";
 import config from "../../config.js";
+import "./styles.css";
 
 import Search from "./search/index";
 const help = require("./images/help.svg");
@@ -19,6 +20,7 @@ if (isSearchEnabled && config.header.search.indexName) {
 }
 
 import Sidebar from "./sidebar";
+import Sidebard from "./sidebar/indexd";
 
 const Header = ({ location }) => (
   <StaticQuery
@@ -62,15 +64,19 @@ const Header = ({ location }) => (
         }
       } = data;
       const finalLogoLink = logo.link !== "" ? logo.link : "/";
-      
+
       const [dark, setdark] = useState(false);
       const changeTheme = () => {
         setdark(!dark);
       };
-      if(dark == true){
-        // require('./styles.css')
-      }else{
-        // require('./nightstyles.css')
+      if (dark) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "#fff";
+        window.localStorage.setItem("darkmood", dark);
+      } else {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "#A9A6AB";
+        window.localStorage.clear();
       }
       return (
         <div className={"navBarWrapper"}>
@@ -119,7 +125,14 @@ const Header = ({ location }) => (
               className={"navbar-collapse collapse navBarCollapse"}
             >
               <div className={"visible-xs"}>
-                <Sidebar location={location} />
+              <Sidebar location={location} />
+
+                {/* {dark ? (
+                  // <Sidebard location={location} />
+                ) : (
+                  <Sidebar location={location} />
+                )} */}
+
                 <hr />
                 {isSearchEnabled ? (
                   <div className={"searchWrapper navBarUL"}>
@@ -204,7 +217,7 @@ const Header = ({ location }) => (
                     </a>
                   </li>
                 ) : null}
-                <li onClick={changeTheme}>
+                <li>
                   {dark ? (
                     <img
                       style={{

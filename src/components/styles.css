@@ -2,6 +2,12 @@
 body {
   font-family: 'Roboto';
 }
+ /* * {
+  background: #131217 !important;
+} */
+.white {
+  background: #fff !important;
+}
 
 .video-responsive {
   position: relative;
@@ -57,7 +63,7 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -375,10 +381,7 @@ pre {
   color: #000;
   background-color: #fff;
 }
-#navbar {
-  background: #fff !important;
 
-}
 .sideBarUL  .item .item{
   margin-left: 16px;
 }
@@ -386,9 +389,7 @@ pre {
 .firstLevel>ul>.item{
   margin-left: 0 !important;
 }
-.visible-xs  {
-  background: #fff !important;
-}
+
 .showFrontLine  .item .item{
   border-left: 1px solid #e6ecf1;
   border-left-color: rgb(230, 236, 241);
@@ -662,16 +663,12 @@ img {
   }
   .navBarParent {
     display: block;
-    background: #fff !important;
+    background: #fff ;
 
 
 
   }
-  .navBarParent .css-folsf1 {
-    display: block;
-    background: #fff !important;
-    
-  }
+
   .separator {
     margin-top: 20px;
     margin-bottom: 20px;

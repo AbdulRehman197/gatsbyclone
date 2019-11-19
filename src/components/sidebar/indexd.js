@@ -46,9 +46,10 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const Sidebar = styled("aside")`
+
+const DarkSidebar = styled("aside")`
   width: 100%;
-  background-color: #fff;
+  background-color: #000 !important;
   border-right: 1px solid #ede7f3;
   height: 100vh;
   overflow: auto;
@@ -59,12 +60,12 @@ const Sidebar = styled("aside")`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #fff;
+  background-color: #000 !important;
 
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-color: #fff;
-    background: #fff;
+    background-color: #131217;
+    background: #131217;
   }
   @media (min-width: 767px) and (max-width: 1023px) {
     padding-left: 0;
@@ -89,7 +90,7 @@ const Divider = styled(props => <li {...props}></li>)`
 `;
 
 var darkmood = window.localStorage.getItem("darkmood");
-const SidebarLayout = ({ location, dark }) => (
+const SidebarLayout = ({ location,dark }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -108,22 +109,24 @@ const SidebarLayout = ({ location, dark }) => (
     render={({ allMdx }) => {
       return (
         <div>
-          <Sidebar>
-            <ul className={"sideBarUL"}>
-              <Tree edges={allMdx.edges} />
-              <Divider />
-              {config.sidebar.links.map((link, key) => {
-                if (link.link !== "" && link.text !== "") {
-                  return (
-                    <ListItem key={key} to={link.link}>
-                      {link.text}
-                      <ExternalLink size={14} />
-                    </ListItem>
-                  );
-                }
-              })}
-            </ul>
-          </Sidebar>
+          (
+            <DarkSidebar>
+              <ul className={"sideBarUL"}>
+                <Tree edges={allMdx.edges} />
+                <Divider />
+                {config.sidebar.links.map((link, key) => {
+                  if (link.link !== "" && link.text !== "") {
+                    return (
+                      <ListItem key={key} to={link.link}>
+                        {link.text}
+                        <ExternalLink size={14} />
+                      </ListItem>
+                    );
+                  }
+                })}
+              </ul>
+            </DarkSidebar>
+          )}
         </div>
       );
     }}
